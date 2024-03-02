@@ -6,11 +6,11 @@ import { PublicKey } from "@solana/web3.js";
 
 // Solana address you wish to receive fees
 export const PLATFORM_CREATOR_ADDRESS = new PublicKey(
-  "GzzWXXDjLD4FDwDkWB5sARjC2aaLSfCQDjx3dmpoTY7K",
+  "6715ymvd38EeSQjZ3vRSA9X68RC73GYynSNRn3pu5732",
 );
 
 // Platform URL - Appears in ShareModal
-export const PLATFORM_SHARABLE_URL = "play-gamba.vercel.app";
+export const PLATFORM_SHARABLE_URL = "https://test-casino-xi.vercel.app/";
 
 // Toggle all live events acrossed gamba toast
 export const LIVE_EVENT_TOAST = true;
@@ -27,38 +27,20 @@ export const TOKENS: TokenMeta[] = [
   GambaStandardTokens.sol,
   GambaStandardTokens.usdc,
   {
-    mint: new PublicKey("AZsHEMXd36Bj1EMNXhowJajpUXzrKcK57wW4ZGXVa7yR"),
-    symbol: "GUAC",
-    name: "Guacamole",
-    image:
-      "https://bafkreiccbqs4jty2yjvuxp5x7gzgepquvv657ttauaqgxfhxghuz5us54u.ipfs.nftstorage.link/",
-    decimals: 5,
-    baseWager: 2000000 * 1e5,
+    mint: new PublicKey("JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN"),
+    symbol: 'JUP',
+    name: 'Jupiter',
+    image: "https://assets.coingecko.com/coins/images/34188/standard/jup.png?1704266489",
+    decimals: 6,
+    baseWager: 1 * 1e6,
   },
   {
-    mint: new PublicKey("ApxJeC9Pv5YbS3Ataq2kAfNeFLafEADVmC49czvFAP93"),
-    symbol: "SOLVEGAS",
-    name: "SolVegas",
-    image:
-      "https://bafybeiglvnotba6yf2rrie3ytr3qo5awn4h4vdukzscyc7xa5snvelqr6a.ipfs.nftstorage.link/",
-    decimals: 9,
-    baseWager: 10000 * 1e9,
+    mint: new PublicKey("8CSTYs264XFrGym2WLy6QGgq6isxU8G4Und9q1gVbbbB"),
+    symbol: 'GMCOCK',
+    name: '$GMCOCK',
+    image: "https://i.imgur.com/YRZpssx.png",
+    decimals: 8,
+    baseWager: 1,
   },
-  {
-    mint: new PublicKey("8CofuxeTuXjrZSMahW9wYkedVoNcvwua6aJeM1UhxuLh"),
-    symbol: "TSTCOIN",
-    name: "TESTERCOIN",
-    image: "https://i.ibb.co/SvfbhLy/imageedit-37-6175591894.png",
-    decimals: 9,
-    baseWager: 1 * 1e9,
-  },
-  // Uncomment and configure this part if you have a custom SPL token you want to add
-  // {
-  //   mint: new PublicKey("Your_Token's_PublicKey"),
-  //   symbol: 'Your_Token_Symbol',
-  //   name: 'Your_Token_Name',
-  //   image: "Your_Token_Image_URL",
-  //   decimals: Your_Token_Decimals,
-  //   baseWager: Your_Base_Wager_Value,
-  // }
+]
 ];
