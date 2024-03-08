@@ -48,8 +48,8 @@ function MyApp({ Component, pageProps }: AppProps) {
               creator={PLATFORM_CREATOR_ADDRESS}
               games={GAMES}
               tokens={TOKENS}
-              defaultCreatorFee={0.05} // 5%
-              defaultJackpotFee={0.01} // 1%
+              defaultCreatorFee={0.04} // 4%
+              defaultJackpotFee={0.00} // 0%
             >
               <Component {...pageProps} />
               <Footer />
