@@ -10,7 +10,7 @@ export const PLATFORM_CREATOR_ADDRESS = new PublicKey(
 );
 
 // Platform URL - Appears in ShareModal
-export const PLATFORM_SHARABLE_URL = "https://test-casino-xi.vercel.app/";
+export const PLATFORM_SHARABLE_URL = "casino.feltgaming.io";
 
 // Toggle all live events acrossed gamba toast
 export const LIVE_EVENT_TOAST = true;

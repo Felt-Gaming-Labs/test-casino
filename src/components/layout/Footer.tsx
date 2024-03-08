@@ -6,7 +6,7 @@ export default function Footer() {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://gamba.so/"
+            href="https://feltgaming.io/"
             className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
           >
             <img src="/logo.svg" className="h-10" alt="Gamba Logo" />
@@ -16,37 +16,37 @@ export default function Footer() {
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://explorer.gamba.so/create"
+                href="https://jup.ag/swap/SOL-GMCOCK_8CSTYs264XFrGym2WLy6QGgq6isxU8G4Und9q1gVbbbB"
                 className="hover:underline me-4 md:me-6"
               >
-                🚀 Create Pool
+                🚀 Buy $GMCOCK
               </a>
             </li>
             <li>
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://github.com/BankkRoll/Gamba-V2-Next.js"
+                href="https://twitter.com/GMCOCK_COIN"
                 className="hover:underline me-4 md:me-6"
               >
-                👨‍💻 Build your own
+                👨‍💻 Felt on X
               </a>
             </li>
             <li>
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://gamba.so/docs"
+                href="https://feltgaming.io/"
                 className="hover:underline me-4 md:me-6"
               >
-                📖 Gamba Docs
+                🛜 Website
               </a>
             </li>
             <li>
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://discord.com/invite/HSTtFFwR"
+                href="https://discord.gg/PdbzYDJjwC"
                 className="hover:underline"
               >
                 💬 Join Discord
@@ -56,12 +56,12 @@ export default function Footer() {
         </div>
         <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
-          © 2023 Made with ❤️ by{" "}
+          © 2024 Made with 🐓 by{" "}
           <a
-            href="https://twitter.com/bankkroll_eth"
+            href="https://twitter.com/GMCOCK_COIN"
             className="hover:underline"
           >
-            Bankk™
+            Felt Gaming Labs™
           </a>
         </span>
       </div>
