@@ -53,8 +53,8 @@ export function useDisclaimer() {
               We&apos;re not liable for damages.
             </li>
             <li className="text-lg">
-              <span className="font-bold">6. Licensing Disclaimer:</span> Not a
-              licensed casino; for simulation only.
+              <span className="font-bold">6. Gaming Revenue Burn:</span> Felt 
+              Gaming Labs uses all casino revenue to burn the $GMCOCK token.
             </li>
             <li className="text-lg">
               <span className="font-bold">7. Fair Play:</span> Games are
@@ -66,7 +66,7 @@ export function useDisclaimer() {
             </li>
             <li className="text-lg">
               <span className="font-bold">9. Responsible Gaming:</span> Play
-              responsibly; seek help if needed.
+              responsibly; seek help with 1-800-GAMBLER.
             </li>
           </ol>
         </div>
