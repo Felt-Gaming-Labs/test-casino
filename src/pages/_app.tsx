@@ -10,7 +10,6 @@ import {
   LIVE_EVENT_TOAST,
   PLATFORM_CREATOR_ADDRESS,
   RPC_ENDPOINT,
-  TOKENS,
 } from "../../config";
 import {
   PhantomWalletAdapter,
@@ -47,7 +46,6 @@ function MyApp({ Component, pageProps }: AppProps) {
             <GambaPlatformProvider
               creator={PLATFORM_CREATOR_ADDRESS}
               games={GAMES}
-              tokens={TOKENS}
               defaultCreatorFee={0.04} // 4%
               defaultJackpotFee={0.00} // 0%
             >
