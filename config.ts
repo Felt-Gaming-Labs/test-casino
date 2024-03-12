@@ -1,14 +1,10 @@
 // config.ts
-// config.ts
-
-import {
-  FAKE_TOKEN_MINT,
-  GambaStandardTokens,
-  useTokenMeta,
-} from "gamba-react-ui-v2";
 
 import { PublicKey } from "@solana/web3.js";
 import { TokenMetadata } from "./types";
+import {
+  useTokenMeta,
+} from "gamba-react-ui-v2";
 
 // Solana address you wish to receive fees
 export const PLATFORM_CREATOR_ADDRESS = new PublicKey(
@@ -67,15 +63,6 @@ export const TOKENS: Record<string, TokenMetadata> = {
     image: "https://i.imgur.com/YRZpssx.png",
     decimals: 8,
     baseWager: 1 * 1e8,
-  },
-    // testing fake token
-  FAKE_TOKEN_MINT: {
-    mint: GambaStandardTokens.fake.mint,
-    name: GambaStandardTokens.fake.name,
-    symbol: GambaStandardTokens.fake.symbol,
-    image: GambaStandardTokens.fake.image,
-    decimals: GambaStandardTokens.fake.decimals,
-    baseWager: GambaStandardTokens.fake.baseWager,
   },
   // You can easily add more tokens here
   //
