@@ -1,13 +1,7 @@
-import {
-  GambaUi,
-  useCurrentToken,
-  useSound,
-  useWagerInput,
-} from "gamba-react-ui-v2";
+import { GambaUi, useSound, useWagerInput } from "gamba-react-ui-v2";
 import React, { useState } from "react";
 
 import useCustomPlay from "@/hooks/useCustomPlay";
-import { useGamba } from "gamba-react-v2";
 import { useWallet } from "@solana/wallet-adapter-react";
 import { useWalletModal } from "@solana/wallet-adapter-react-ui";
 
@@ -57,12 +51,7 @@ function CockFight() {
     sounds.play("playing");
 
     try {
-      // await gambaBPlay(wager, [2, 0] );
-      await game.play({
-        bet: [2, 0],
-        wager,
-      });
-
+      await gambaBPlay(wager, [2, 0]);
       const result = await game.result();
 
       setWin(result.payout > 0);
@@ -94,8 +83,8 @@ function CockFight() {
       ? WIN_WHITE_ROOSTER_GIF
       : WIN_BLACK_ROOSTER_GIF
     : side === "white"
-    ? WIN_BLACK_ROOSTER_GIF
-    : WIN_WHITE_ROOSTER_GIF;
+      ? WIN_BLACK_ROOSTER_GIF
+      : WIN_WHITE_ROOSTER_GIF;
 
   const getRoosterStyle = (roosterSide: Side) => ({
     cursor: "pointer",
@@ -119,7 +108,7 @@ function CockFight() {
           style={parentContainerStyle}
         >
           <div style={{ position: "absolute", top: 25 }}>
-          <p>Choose Your Cock</p>
+            <p>Choose Your Cock</p>
           </div>
           <img
             src={TEXTURE_WHITE_ROOSTER}

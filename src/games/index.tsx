@@ -4,7 +4,7 @@ import { GameBundle } from "gamba-react-ui-v2";
 import dynamic from "next/dynamic";
 
 export const GAMES: GameBundle[] = [
-  { 
+  {
     id: "cockfight",
     meta: {
       background: "#ffe694",

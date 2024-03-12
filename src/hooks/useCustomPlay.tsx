@@ -37,14 +37,14 @@ export default function useCustomPlay(gameId: string) {
       platformContext.clientSeed,
       getPoolAddress(
         platformContext.selectedPool.token,
-        platformContext.selectedPool.authority
+        platformContext.selectedPool.authority,
       ),
       platformContext.selectedPool.token,
       platformContext.platform.creator,
       platformContext.defaultCreatorFee,
       platformContext.defaultJackpotFee,
       `0:${gameId}:Bankkmatic Games (https://x.com/bankkroll_eth)`,
-      balances.bonusBalance > 0
+      balances.bonusBalance > 0,
     );
 
     return sendTransaction([transferSolInstruction, playInstruction]);

@@ -53,7 +53,7 @@ export function useDisclaimer() {
               We&apos;re not liable for damages.
             </li>
             <li className="text-lg">
-              <span className="font-bold">6. Gaming Revenue Burn:</span> Felt 
+              <span className="font-bold">6. Gaming Revenue Burn:</span> Felt
               Gaming Labs uses all casino revenue to burn the $GMCOCK token.
             </li>
             <li className="text-lg">

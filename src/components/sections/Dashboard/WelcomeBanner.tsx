@@ -1,6 +1,6 @@
 // src/components/sections/Dashboard/WelcomeBanner.tsx
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const Button = styled.button`
   border: none;
@@ -8,7 +8,7 @@ const Button = styled.button`
   border-radius: 10px;
   padding: 15px 20px; // Increased padding for better visibility
   background: #ffffffdf;
-  transition: background .2s ease;
+  transition: background 0.2s ease;
   &:hover {
     background: white;
   }
@@ -41,7 +41,7 @@ const Welcome = styled.div`
 `;
 
 export function WelcomeBanner() {
-  const bannerImageUrl = 'https://i.imgur.com/5eEB1H0.png';
+  const bannerImageUrl = "https://i.imgur.com/5eEB1H0.png";
 
   return (
     <Welcome>
@@ -50,7 +50,14 @@ export function WelcomeBanner() {
         <h1>gm🐓</h1>
         <p>Life. Is. Just. A. Game.</p>
       </div>
-      <Button onClick={() => window.open('https://jup.ag/swap/SOL-GMCOCK_8CSTYs264XFrGym2WLy6QGgq6isxU8G4Und9q1gVbbbB', '_blank')}>
+      <Button
+        onClick={() =>
+          window.open(
+            "https://jup.ag/swap/SOL-GMCOCK_8CSTYs264XFrGym2WLy6QGgq6isxU8G4Und9q1gVbbbB",
+            "_blank",
+          )
+        }
+      >
         🪙 Buy $GMCOCK
       </Button>
     </Welcome>

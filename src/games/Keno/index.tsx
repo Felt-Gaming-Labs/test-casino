@@ -220,7 +220,6 @@ export default function Keno() {
           </GambaUi.Button>
         )}
       </GambaUi.Portal>
-      
     </>
   );
 }
