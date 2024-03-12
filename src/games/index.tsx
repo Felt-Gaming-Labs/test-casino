@@ -4,6 +4,16 @@ import { GameBundle } from "gamba-react-ui-v2";
 import dynamic from "next/dynamic";
 
 export const GAMES: GameBundle[] = [
+  { 
+    id: "cockFight",
+    meta: {
+      background: "#ffe694",
+      name: "Cockfight",
+      image: "/games/logo.png",
+      description: `Cockfight is a classic game where you must choose between two different roosters to win.`,
+    },
+    app: dynamic(() => import("./CockFight")),
+  },
   {
     id: "dice",
     meta: {

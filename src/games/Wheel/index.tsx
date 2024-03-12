@@ -21,6 +21,7 @@ import React, { useCallback, useEffect, useRef, useState } from "react";
 import { drawTicker, drawWheel, radius } from "./wheel";
 
 import { gsap } from "gsap";
+import useCustomPlay from "@/hooks/useCustomPlay";
 import { useWallet } from "@solana/wallet-adapter-react";
 import { useWalletModal } from "@solana/wallet-adapter-react-ui";
 
@@ -33,6 +34,8 @@ export default function WheelGame() {
   const walletModal = useWalletModal();
   const wallet = useWallet();
   const game = GambaUi.useGame();
+  const gambaBPlay = useCustomPlay("Wheel");
+
   const sounds = useSound({
     spin: "/games/wheel/spinning.mp3",
     win: "/games/wheel/win.mp3",
@@ -125,11 +128,7 @@ export default function WheelGame() {
           segments = REGULAR_WHEEL_SEGMENTS;
       }
 
-      await game.play({
-        wager,
-        bet,
-        metadata: ["Bankkmatic Games (https://x.com/bankkroll_eth)"],
-      });
+      await gambaBPlay(wager, bet);
       setSpinning(true);
       const result = await game.result();
       sounds.play("spin", { playbackRate: 0.5 });
@@ -173,9 +172,11 @@ export default function WheelGame() {
   return (
     <>
       <GambaUi.Portal target="screen">
-        <div className="flex flex-col justify-center items-center">
-          <div ref={wheelContainerRef} />
-        </div>
+        <GambaUi.Responsive>
+          <div className="flex flex-col justify-center items-center">
+            <div ref={wheelContainerRef} />
+          </div>
+        </GambaUi.Responsive>
       </GambaUi.Portal>
       <GambaUi.Portal target="controls">
         <GambaUi.WagerInput value={wager} onChange={setWager} />

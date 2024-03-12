@@ -6,11 +6,14 @@
 import { GambaUi, useSound, useWagerInput } from "gamba-react-ui-v2";
 import React, { useState } from "react";
 
+import useCustomPlay from "@/hooks/useCustomPlay";
+import { useGamba } from "gamba-react-v2";
 import { useWallet } from "@solana/wallet-adapter-react";
 import { useWalletModal } from "@solana/wallet-adapter-react-ui";
 
 export default function Limbo() {
   const game = GambaUi.useGame();
+  const gambaBPlay = useCustomPlay("Limbo");
   const [wager, setWager] = useWagerInput();
   const [targetMultiplier, setTargetMultiplier] = useState<number>(20);
   const [resultMultiplier, setResultMultiplier] = useState<number>(1);
@@ -23,6 +26,7 @@ export default function Limbo() {
     spin: "/games/limbo/numbers.mp3",
     win: "/games/limbo/win.mp3",
     lose: "/games/limbo/lose.mp3",
+    tick: "/games/limbo/tick.mp3",
   });
 
   const connect = () => {
@@ -34,9 +38,8 @@ export default function Limbo() {
   };
 
   const handleMultiplierChange = (value: string) => {
-    if (value) {
-      setTargetMultiplier(Math.max(1, parseFloat(value)));
-    }
+    setTargetMultiplier(Math.max(2, Math.min(100, parseFloat(value))));
+    sounds.play("tick");
   };
 
   const startAnimation = (
@@ -71,13 +74,12 @@ export default function Limbo() {
       setResultMultiplier(1);
       setTextColor("#FFFFFF");
 
-      await game.play({
+      await gambaBPlay(
         wager,
-        bet: new Array(targetMultiplier)
+        new Array(targetMultiplier)
           .fill(0)
           .map((_, index) => (index === 0 ? targetMultiplier : 0)),
-        metadata: ["Bankkmatic Games (https://x.com/bankkroll_eth)"],
-      });
+      );
       const result = await game.result();
 
       const winCondition = result.multiplier >= targetMultiplier;
@@ -98,27 +100,29 @@ export default function Limbo() {
   return (
     <>
       <GambaUi.Portal target="screen">
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-            height: "500px",
-            transition: "all 0.5s ease-in-out",
-          }}
-        >
+        <GambaUi.Responsive>
           <div
             style={{
-              fontSize: "100px",
-              fontWeight: "bold",
-              color: textColor,
-              transition: "color 0.5s ease-in-out",
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+              height: "500px",
+              transition: "all 0.5s ease-in-out",
             }}
           >
-            {resultMultiplier.toFixed(2)}x
+            <div
+              style={{
+                fontSize: "100px",
+                fontWeight: "bold",
+                color: textColor,
+                transition: "color 0.5s ease-in-out",
+              }}
+            >
+              {resultMultiplier.toFixed(2)}x
+            </div>
           </div>
-        </div>
+        </GambaUi.Responsive>
       </GambaUi.Portal>
 
       <GambaUi.Portal target="controls">
