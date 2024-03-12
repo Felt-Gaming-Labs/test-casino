@@ -5,7 +5,7 @@ import dynamic from "next/dynamic";
 
 export const GAMES: GameBundle[] = [
   { 
-    id: "cockFight",
+    id: "cockfight",
     meta: {
       background: "#ffe694",
       name: "Cockfight",
