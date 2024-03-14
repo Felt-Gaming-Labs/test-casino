@@ -60,7 +60,7 @@ export const TOKENS: Record<string, TokenMetadata> = {
     mint: new PublicKey("8CSTYs264XFrGym2WLy6QGgq6isxU8G4Und9q1gVbbbB"),
     symbol: 'GMCOCK',
     name: '$GMCOCK',
-    image: "https://i.imgur.com/YRZpssx.png",
+    image: "https://i.imgur.com/aTbVsTf.png",
     decimals: 8,
     baseWager: 1 * 1e8,
   },
