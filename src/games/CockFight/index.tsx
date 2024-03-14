@@ -74,7 +74,7 @@ function CockFight() {
         setPlaying(false);
         setWin(false);
         setResult("");
-      }, 6800);
+      }, 7300);
     }
   };
 
