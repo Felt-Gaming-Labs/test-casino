@@ -41,7 +41,7 @@ const Welcome = styled.div`
 `;
 
 export function WelcomeBanner() {
-  const bannerImageUrl = "https://imgur.com/eOW6JmR";
+  const bannerImageUrl = "https://i.imgur.com/eOW6JmR.png";
 
   return (
     <Welcome>
