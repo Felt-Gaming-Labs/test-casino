@@ -7,7 +7,7 @@ export const GAMES: GameBundle[] = [
   {
     id: "cockfight",
     meta: {
-      background: "#ffe694",
+      background: "#7ed957",
       name: "Cockfight",
       image: "/games/logo.png",
       description: `Cockfight is a classic game where you must choose between two different roosters to win.`,
