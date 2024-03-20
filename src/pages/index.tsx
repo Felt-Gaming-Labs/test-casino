@@ -22,7 +22,7 @@ export default function HomePage() {
           property="og:description"
           content="A decentralized casino on Solana built by Felt gaming Labs."
         />
-        <meta property="og:image" content="https://i.imgur.com/trxhhWX.png" />
+        <meta property="og:image" content="https://i.imgur.com/eOW6JmR.png" />
 
         <meta property="twitter:card" content="summary_large_image" />
         <meta
@@ -36,7 +36,7 @@ export default function HomePage() {
         />
         <meta
           property="twitter:image"
-          content="https://i.imgur.com/trxhhWX.png"
+          content="https://i.imgur.com/eOW6JmR.png"
         />
       </Head>
       <Header />
