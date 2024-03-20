@@ -16,7 +16,7 @@ export default function HomePage() {
         />
 
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://test-casino-xi.vercel.app/" />
+        <meta property="og:url" content="https://casino.feltgaming.io/" />
         <meta property="og:title" content="Felt Casino" />
         <meta
           property="og:description"
@@ -27,7 +27,7 @@ export default function HomePage() {
         <meta property="twitter:card" content="summary_large_image" />
         <meta
           property="twitter:url"
-          content="https://test-casino-xi.vercel.app/"
+          content="https://casino.feltgaming.io/"
         />
         <meta property="twitter:title" content="Felt Casino" />
         <meta
