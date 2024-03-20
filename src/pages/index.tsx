@@ -12,7 +12,7 @@ export default function HomePage() {
         <meta name="title" content="Felt Casino" />
         <meta
           name="Bet with SOL USDC JUP GMCOCK"
-          content="A decentralized casino on Solana built by Felt gaming Labs."
+          content="A decentralized casino on Solana built by Felt Gaming Labs."
         />
 
         <meta property="og:type" content="website" />
@@ -20,7 +20,7 @@ export default function HomePage() {
         <meta property="og:title" content="Felt Casino" />
         <meta
           property="og:description"
-          content="A decentralized casino on Solana built by Felt gaming Labs."
+          content="A decentralized casino on Solana built by Felt Gaming Labs."
         />
         <meta property="og:image" content="https://i.imgur.com/eOW6JmR.png" />
 
@@ -32,7 +32,7 @@ export default function HomePage() {
         <meta property="twitter:title" content="Felt Casino" />
         <meta
           property="twitter:description"
-          content="A decentralized casino on Solana built by Felt gaming Labs."
+          content="A decentralized casino on Solana built by Felt Gaming Labs."
         />
         <meta
           property="twitter:image"
