@@ -172,4 +172,4 @@ function CockFight() {
   );
 }
 
-export default MemeKombat;
+export default CockFight;
