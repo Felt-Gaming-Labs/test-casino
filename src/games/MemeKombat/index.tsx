@@ -63,7 +63,7 @@ function CockFight() {
         } else {
           sounds.play("lose");
         }
-      }, 5000);
+      }, 10500);
     } catch (error) {
       console.error("Error playing the game:", error);
       setPlaying(false);
@@ -74,7 +74,7 @@ function CockFight() {
         setPlaying(false);
         setWin(false);
         setResult("");
-      }, 10000);
+      }, 10500);
     }
   };
 
