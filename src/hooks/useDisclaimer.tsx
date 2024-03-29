@@ -45,8 +45,8 @@ export function useDisclaimer() {
               involve risk; no guaranteed winnings.
             </li>
             <li className="text-lg">
-              <span className="font-bold">4. No Warranty:</span> Games provided
-              &quot;as is&quot;; operate randomly.
+              <span className="font-bold">4. New Wallet Connect:</span> First bet
+              with new wallets include a 0.01 connection fee.
             </li>
             <li className="text-lg">
               <span className="font-bold">5. Limitation of Liability:</span>{" "}
