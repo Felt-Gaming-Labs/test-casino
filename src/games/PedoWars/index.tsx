@@ -6,10 +6,10 @@ import { useWallet } from "@solana/wallet-adapter-react";
 import { useWalletModal } from "@solana/wallet-adapter-react-ui";
 
 // Constants for roosters and their results
-const TEXTURE_WHITE_ROOSTER = "/games/memefight/whitecock.png";
-const TEXTURE_BLACK_ROOSTER = "/games/memefight/blackcock.png";
-const WIN_WHITE_ROOSTER_GIF = "/games/memefight/whitecockwins.gif";
-const WIN_BLACK_ROOSTER_GIF = "/games/memefight/blackcockwins.gif";
+const TEXTURE_WHITE_ROOSTER = "/games/diddyepstein/whitecock.png";
+const TEXTURE_BLACK_ROOSTER = "/games/diddyepstein/blackcock.png";
+const WIN_WHITE_ROOSTER_GIF = "/games/diddyepstein/whitecockwins.gif";
+const WIN_BLACK_ROOSTER_GIF = "/games/diddyepstein/blackcockwins.gif";
 
 // Enum for side selection
 const SIDES = {
@@ -28,9 +28,9 @@ function CockFight() {
   const [side, setSide] = useState<Side>("white");
   const [wager, setWager] = useWagerInput();
   const sounds = useSound({
-    win: "/games/pedowars/win.mp3",
-    lose: "/games/pedowars/lose.mp3",
-    playing: "/games/pedowars/playing.mp3",
+    win: "/games/diddyepstein/win.mp3",
+    lose: "/games/diddyepstein/lose.mp3",
+    playing: "/games/diddyepstein/playing.mp3",
   });
 
   const walletModal = useWalletModal();
