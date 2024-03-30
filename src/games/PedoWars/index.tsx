@@ -21,7 +21,7 @@ type Side = keyof typeof SIDES;
 
 function CockFight() {
   const game = GambaUi.useGame();
-  const gambaBPlay = useCustomPlay("pedowars");
+  const gambaBPlay = useCustomPlay("diddyepstein");
   const [playing, setPlaying] = useState(false);
   const [win, setWin] = useState(false);
   const [result, setResult] = useState<string>("");
