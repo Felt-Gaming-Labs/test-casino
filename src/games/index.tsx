@@ -5,6 +5,16 @@ import dynamic from "next/dynamic";
 
 export const GAMES: GameBundle[] = [
   {
+    id: "pedowars",
+    meta: {
+      background: "#5F686D",
+      name: "Diddy vs Epstein",
+      image: "/games/logo.png",
+      description: `Predator vs Predator, which criminal will be victorious? 2x your bet if you win.`,
+    },
+    app: dynamic(() => import("./PedoWars")),
+  }, 
+  {
     id: "memefight",
     meta: {
       background: "#E6BF67",
